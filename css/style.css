@@ -1,0 +1,281 @@
+* {
+  margin: 0px;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* .container {
+  display: grid;
+} */
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.8) 100%),
+    url("../pics/bakgrunn.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: 15px;
+}
+
+li,
+a,
+span {
+  display: inline;
+  text-decoration-style: none;
+  text-decoration: none;
+  color: #b7abab;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex {
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+
+  background-color: rgba(105, 99, 85, 0.2);
+}
+
+.flex a {
+  text-decoration: none;
+}
+.nav,
+.logo {
+  padding: 20px 15px;
+
+  font-family: anurati;
+
+  src: url(/fonts/Anurati-Regular.otf);
+}
+
+.logo a {
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+}
+
+.logo a:hover,
+.bottom-logo:hover {
+  transition: all 0.3s ease-out;
+  color: white;
+}
+
+.nav {
+  font-size: 18px;
+  font-family: monbaiti;
+  src: url(/fonts/monbaiti.ttf);
+}
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav li a {
+  transition: all 0.8s ease-out;
+  text-decoration: none;
+}
+@keyframes swing-in-top-fwd {
+  0% {
+    transform: rotateX(-100deg);
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+
+.nav li a:hover {
+  color: #e7c690;
+  transform: scale(1.8);
+  animation: swing-in-top-fwd 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  transition: all 0.4s ease-out;
+}
+
+.title {
+  transition: all 0.6s ease-out;
+  opacity: 1;
+  font-size: 30px;
+  font-family: anurati;
+  color: white;
+  transition: all 0.8s ease-out;
+  src: url(/fonts/Anurati-Regular.otf);
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.title:hover {
+  transition: all 0.6s ease-out;
+  color: #e7c690;
+  transform: scale(1);
+}
+.buttondiv {
+  padding-right: 31px;
+}
+
+.button {
+  text-transform: uppercase;
+  border: 1px solid black;
+  color: white;
+  font-weight: 10;
+  font-family: "Baskervville", serif;
+  transition: all 0.6s ease-out;
+}
+
+.button:hover {
+  background-color: silver;
+  color: black;
+  border-color: wheat;
+  border-radius: 50px;
+  transition: all 0.6s ease-out;
+}
+
+hr {
+  border-color: bisque;
+  border-width: 3px;
+  max-width: 65px;
+  margin: 0px auto;
+  margin-top: 20px;
+}
+.para {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: "Baskervville", serif;
+  padding-left: 20px;
+  letter-spacing: 5px;
+  color: white;
+}
+
+.para-span {
+  margin-right: 40px;
+}
+.anurati {
+  font-family: anurati;
+  src: url(/fonts/Anurati-Regular.otf);
+  color: white;
+}
+
+#layout h5 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  color: #b7abab;
+}
+
+p {
+  color: white;
+}
+
+#layout {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  margin-top: 0px;
+
+  padding: 0px 15px;
+  height: 60vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.about,
+.skills,
+.social,
+.MD {
+  height: 250px;
+  background-color: rgba(105, 99, 85, 0.2);
+  border-radius: 20px;
+  padding-left: 20px;
+  letter-spacing: 3px;
+  color: white;
+}
+
+@media only screen and (min-width: 1080px) {
+  #layout {
+    background-color: rgba(105, 99, 85, 0.2);
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .para-span {
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #layout {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: repeat(3, 1fr);
+
+    margin: 40px;
+  }
+
+  .about,
+  .skills,
+  .social,
+  .MD {
+    grid-column-start: span 2;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #layout {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: repeat(3, 1fr);
+
+    margin: 40px;
+  }
+
+  .about,
+  .skills,
+  .social,
+  .MD {
+    grid-column-start: span 2;
+  }
+}
+
+#buffer {
+  margin: 5em;
+}
+
+#buffer2 {
+  margin: 1em;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom-logo {
+  font-family: anurati;
+  color: #b7abab;
+  src: url(/fonts/Anurati-Regular.otf);
+  margin-right: 31px;
+  font-size: 25px;
+}
+
+.skills ul li,
+.social ul li,
+.MD a li
+{
+  display: flex;
+  flex-direction: column;
+  list-style-position: inside;
+  list-style-type: square;
+  display: list-item;
+  color: white;
+}
